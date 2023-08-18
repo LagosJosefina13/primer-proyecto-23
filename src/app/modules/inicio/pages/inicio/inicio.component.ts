@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
-//Importamos nuestra interfaz
-import { TarjetasInicio } from 'src/app/models/modelos';
+//Importamos nuestra interfaz de collares
+import { Collares } from "src/app/models/collares";
 
 @Component({
   selector: 'app-inicio',
@@ -9,16 +9,27 @@ import { TarjetasInicio } from 'src/app/models/modelos';
 })
 export class InicioComponent {
   //Propiedad Publica (tipo array)
-  public info: TarjetasInicio[];
+  public info: Collares[];
 
 //Inicializa la propiedad Info
   constructor(){
     this.info=[
      {
+      id:"",
       titulo: "Tarjeta 1",
-     descripcion:"Foto de un michi",
-      imagen:"https://images.ecestaticos.com/x0lO0Xy0zitom1L4KCw-c7exfXc=/0x0:0x0/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F7bb%2Fb16%2Fd02%2F7bbb16d02adf2f25845bf84abaacc7de.jpg",
+      material:"",
+     descripcion:"Foto del collar",
+      imagen:"https://www.losandes.com.ar/resizer/4ZBRkCuevq8jqrY8E8rNq25QCMY=/1023x1362/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/6UZO6EFC2FHC3JLMLIKO3UPIEY.jpeg",
       alt:""
+    },
+    {
+    id:"",
+    titulo:"",
+    material:"",
+    descripcion:"",
+    imagen:"",
+    alt:""
+
     }
     ]
   }
