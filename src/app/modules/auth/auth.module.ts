@@ -11,6 +11,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 //SERVICIOS
 import { AuthService } from './sevices/auth.service';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { AuthService } from './sevices/auth.service';
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
-
+    FormsModule
   ],
   exports:[
     MatIconModule,
