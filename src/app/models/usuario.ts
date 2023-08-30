@@ -1,5 +1,5 @@
 export interface Usuario {
-  uid:string,
-  nombre:string,
-  contrasena:string
+  uid:string | any;
+  nombre:string;
+  contrasena:string;
 }

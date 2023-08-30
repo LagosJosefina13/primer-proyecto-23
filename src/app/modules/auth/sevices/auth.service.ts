@@ -13,4 +13,16 @@ export class AuthService {
     //retorna nueva informacion
     return this.auth.createUserWithEmailAndPassword(nombre, contrasena)
    }
+   //funcion asincornica para tomar UID
+   async getUid(){
+    //CURRENTUSER ->
+    const user= await this.auth.currentUser
+
+    if(user==null){
+      return null;
+
+    }else{
+      return user.uid;
+    }
+   }
 }
